@@ -1,0 +1,79 @@
+/* Styling the header */
+header {
+    background-image: url('images/background.png');
+    color: white;
+}
+
+
+section div > h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 127px;
+}
+
+section div span {
+    display: inline-block;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* Text color for the spans */
+}
+section div button {
+    background-color: #ab51e7; /* Purple button background */
+    color: white;
+    padding: 16px 16px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px;
+    width: 105;
+    height: 36;
+    transition: opacity 0.15s;
+}
+section div button:hover {
+    background-color: #a485d6;
+}
+/* Learn from the pros section */
+section div > h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 200px;
+}
+.learn {
+    font-size: 30px;       
+    font-weight: normal;      
+    color: #8b51e7;         
+    text-transform: capitalize;  
+    letter-spacing: 3px;              
+    border-radius: 5px;     
+}
+section div div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+section div div div {
+    width: 23%; /* Each profile takes up 23% width */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section div div div img {
+    width: 100%;
+    border-radius: 50%; /* Circular images */
+    max-width: 150px;
+}
+
+section div div div h3 {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+section div div div p {
+    font-size: 14px;
+    color: white;
+}
