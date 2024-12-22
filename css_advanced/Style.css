@@ -238,3 +238,93 @@ section div div div p {
     color: #8b51e7;
     margin-top: 10px;
 }
+section {
+    width: 1440px; 
+    height: 502px; 
+    margin: 0 auto; 
+    text-align: center; 
+    background-color: #071629; 
+}
+
+/* Section header */
+.highlight {
+    color: #C271FF; 
+    font-size: 36px; 
+    font-weight: bold;
+    text-decoration: none; 
+    font-style: italic; 
+    margin-right: 5px; 
+    width: 234px;
+    height: 40px;
+}
+section h2 {
+    font-size: 32px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 234px;
+    height: 40px;
+}
+
+section div {
+    display: inline-block; 
+    width: 257px; 
+    height: 153px; 
+    margin: 0 10px; 
+    text-align: center; 
+    background-color: #071629; 
+    border-radius: 10px; 
+    padding: 10px; 
+    vertical-align: top;
+} 
+
+/* Individual membership option */
+section > div img {
+    width: 60px; 
+    height: 60px;
+    margin-bottom: 10px;
+    background-color: #C271FF;
+
+}
+
+section > div h3 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+section > div p {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+section button {
+    display: block;
+    margin: 30px auto 0; 
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #C271FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+section button:hover {
+    background-color: grey; 
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    section > div {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    section > div img {
+        margin-bottom: 15px;
+    }
+}
