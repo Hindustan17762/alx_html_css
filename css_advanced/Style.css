@@ -160,7 +160,7 @@ section div div div p {
     font-style: Arial; 
     text-decoration: none; 
     font-weight: bold;
-    font-size: 30; 
+    font-size: 30px;
 }
 
 /* Container for the video items */
@@ -179,6 +179,7 @@ section div div div p {
     border-radius: 8px; 
     box-sizing: border-box;
     text-align: center;
+    position: relative; /* Ensure play icon is positioned relative to the container */
 }
 
 /* Video thumbnail */
@@ -186,6 +187,19 @@ section div div div p {
     width: 100%; 
     border-radius: 5px;
     margin-bottom: 10px;
+    position: relative;
+}
+
+/* Play icon */
+.video-section .play-icon {
+    position: absolute;
+    top: 50%; /* Center the play icon */
+    left: 50%; /* Center the play icon */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    width: 50px; /* Set the size of the icon */
+    height: 50px;
+    opacity: 0.8; /* Slight opacity for the icon */
+    cursor: pointer;
 }
 
 /* Title of the video */
@@ -215,22 +229,27 @@ section div div div p {
     font-size: 16px;
     margin-top: 5px;
     color: #8b51e7;
-    height: 27;
-    width: 86;
+    height: 27px;
+    width: 86px;
 }
 
-/* Star ratings */
-.video-section .fa-star {
-    color: #8b51e7; 
-    margin: 2px;
-    width: 15;
-    height: 15;
+.video-section .star-rating {
+    display: flex;
+    align-items: center;
 }
-.rating .star {
-    color:grey; 
-    font-size: 20px;
-    margin-right: 5px; 
+
+/* Use images for stars */
+.video-section .star-rating img {
+    width: 20px; 
+    height: 20px;
+    margin-right: 5px;
 }
+
+/* Placeholder for the faded star (grey color) */
+.video-section .star-rating .star.faded {
+    opacity: 05;
+}
+
 
 /* Duration of the video */
 .video-section div > p:last-child {
@@ -238,6 +257,7 @@ section div div div p {
     color: #8b51e7;
     margin-top: 10px;
 }
+
 section {
     width: 1440px; 
     height: 502px; 
@@ -327,4 +347,107 @@ section button:hover {
     section > div img {
         margin-bottom: 15px;
     }
+}
+section {
+    width: 920px;
+    height: 707px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+}
+section h2 {
+    text-align: center;
+    font-size: 41px;
+    font-weight: bold;
+    letter-spacing: 2px; 
+    margin-bottom: 20px; 
+    color: #333; 
+}
+section > div {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 20px; 
+    max-width: 920px; 
+    margin: 0 auto; 
+}
+
+
+section > div > div {
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; 
+}
+
+/* Style for sub-headers (questions) */
+section h3 {
+    font-size: 1.25rem; 
+    font-weight: bold; 
+    color: #071629; 
+    margin-bottom: 10px; 
+}
+
+/* Style for the descriptions (answers) */
+section > div > div > div:last-child {
+    font-size: 1rem;
+    color: grey; 
+    line-height: 1.6; 
+}
+footer {
+    background-color: #071629; 
+    color: grey;
+    padding: 40px 20px; 
+    position: relative;
+    text-align: center;
+    width: 1440px;
+    height: 249px;
+
+}
+
+footer section {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+footer div:first-child {
+    display: flex;
+    align-items: center;/
+}
+
+footer div img {
+    width: 150px; 
+    height: auto; 
+}
+
+footer div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer div:last-child i {
+    font-size: 24px;
+    color: #fff; 
+    transition: color 0.3s ease; 
+}
+
+footer div:last-child i:hover {
+    color: gray; 
+}
+
+footer p {
+    font-size: 14px;
+    margin: 20px 0 0; 
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); 
 }
