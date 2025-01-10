@@ -12,8 +12,6 @@ header {
     padding: 20px;
     height: 800px;
 }
-
-/* Flex container for the logo and navigation */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -88,7 +86,8 @@ nav ul li a:hover {
     border: none;
     margin-top: 27px;
     transition: box-shadow 0.15s;
-    transition background-color: #ffffff;
+    transition: background-color 0.15s ease;
+
     cursor: pointer;
     margin-bottom: 30px;
 }

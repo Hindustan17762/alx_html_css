@@ -1,0 +1,79 @@
+.What{
+    color:#a485d6;
+    font-size: 32px;
+}
+.what-we-do-section{
+    text-align: center;
+    margin-top: 0px;
+    color: #071629;
+    max-width: 637px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 1400px;
+    
+
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: darkcyan;
+    margin-top: 45px;
+    margin-bottom: auto;
+    font-size: 29;
+    display: inline-block;
+    font-weight: bolder;
+}
+.what-we-do-description{
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+/* Container styles */
+.font-properties {
+    max-width: 1002px; /* Maximum width of the container */
+    margin: 0 auto; /* Center align the container */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the items horizontally */
+    gap: 16px; /* Add space between blocks */
+    flex-wrap: nowrap; /* Allow items to wrap to the next row if needed */
+    margin-top: 45px;
+    margin-bottom: 90px;
+  }
+  
+  /* Individual block styles */
+  .font-properties > div {
+    max-width: 210px; /* Limit the width of each block */
+    display: flex; /* Use flexbox for vertical alignment of icon and text */
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center align horizontally within each block */
+    text-align: center; /* Center align text content */
+    gap: 8px; /* Add space between the icon and the text */
+  }
+  
+  /* Icon styling */
+  .font-properties span {
+    font-size: 100px; /* Icon size */
+    color: #FF6565; /* Icon color */
+  }
+  .font-properties span:hover {
+    animation: bounce 0.5s ease-in-out; /* Trigger the bounce effect */
+    color: #ff6347;
+  }
+  
+  /* Text styling */
+  .font-properties p {
+    font-size: 10px; /* Font size for the description */
+    color: #555; /* Text color */
+    margin: 0; /* Remove default margin */
+    line-height: 25px;
+    margin-top: 25px;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
