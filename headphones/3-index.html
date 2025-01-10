@@ -14,15 +14,25 @@
         <h2>Contact Us</h2>
         <div class="contact-form">
           <form>
-            <!-- Input fields -->
-            <textarea placeholder="Write your message here" rows="5"></textarea>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
+            <!-- Simple underlined input fields -->
+            <div class="input-group">
+              <input type="text" placeholder="Your Name" required>
+              <span class="underline"></span>
+            </div>
+            <div class="input-group">
+              <input type="email" placeholder="Your Email" required>
+              <span class="underline"></span>
+            </div>
+            <div class="input-group">
+              <textarea placeholder="Your Message" rows="1" required></textarea>
+              <span class="underline"></span>
+            </div>
             <!-- Call-to-action button -->
             <button type="submit" class="cta-button">Call to Action</button>
           </form>
         </div>
       </section>
+      
       
 </body>
 </html>
