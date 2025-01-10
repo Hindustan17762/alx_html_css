@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('./images/headphones_hero_1.jpg') no-repeat center center;
+  }
+  
+  /* Font Properties Section */
+  .font-properties {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1000px;
+    
+  }
+  
+  .font-properties div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 10px;
+    animation: float 4s ease-in-out infinite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    font-size: 12px;
+   
+  }
+  
+  .font-properties div:hover {
+    transform: scale(1.1);
+  }
+  
+  .font-properties span {
+    font-size: 100px;
+    animation: rotate 5s linear infinite;
+    color: #FF6565
+  }
+  
+  .font-properties p {
+    margin: 10px 0 0;
+    text-align: center;
+    animation: fadeIn 3s infinite alternate;
+  }
+  
+  /* Pentagon Container Section */
+  .pentagon-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .pentagon {
+    width: 190px;
+    height: 190px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background-color: #ff5722;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    animation: bounce 3s ease-in-out infinite;
+  }
+  
+  .pentagon-content {
+    text-align: center;
+    animation: pulse 2.5s infinite;
+  }
+  
+  .text-2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    background-color: none;
+    margin-bottom: 10px;
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      background-color: #ff5722;
+    }
+    50% {
+      transform: scale(1.1);
+      background-color: #ff7043;
+    }
+    100% {
+      transform: scale(1);
+      background-color: #ff5722;
+    }
+  }
+  
