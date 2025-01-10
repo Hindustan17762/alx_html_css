@@ -1,0 +1,65 @@
+/* General styles for the contact section */
+.contact-us {
+    width: 1400px;
+    height: 650px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .contact-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Contact form container */
+  .contact-form {
+    width: 335px;
+    height: 337px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
+  /* Styling the input fields and textarea */
+  .contact-form input,
+  .contact-form textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Textarea height adjustment */
+  .contact-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  /* Call-to-action button */
+  .cta-button {
+    display: inline-block;
+    width: 162px;
+    height: 44;
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #FF6565;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+    margin-top: 10px;
+  }
+  
+  .cta-button:hover {
+    background-color: lightgrey;
+  }
+  
