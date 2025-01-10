@@ -1,0 +1,38 @@
+.pentagons-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between pentagons */
+    padding: 20px;
+    background-color: #f4f4f4; /* Section background color */
+  }
+  
+  .pentagon {
+    width: 190px;
+    height: 190px;
+    background-color: #FF6565; /* Pentagon background color */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pentagon:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .pentagon span {
+    display: block;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+  
+  .per{
+    font-size: 40px;
+  }
