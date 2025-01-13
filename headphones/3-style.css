@@ -1,3 +1,357 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Shared background for the header and first section */
+header {
+  background: url('./images/headphones_hero_1.jpg') no-repeat center center;
+  background-size: cover;
+  color: white; /* Text color on the background */
+  padding: 20px;
+  height: 800px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Center content */
+  margin: 0 auto;
+}
+
+/* Logo and Name */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 50px; /* Adjust logo size */
+  margin-right: 10px;
+}
+
+.logo-container h1 {
+  font-size: 24px; /* Adjust text size */
+  margin: 0;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Hover effect for navigation */
+}
+
+/* Header text styling */
+.header-text {
+  text-align: center;
+  margin-top: 350px;
+  color: white;
+  max-width: 637px; /* Restrict text width */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.second-paragraph {
+  font-size: 10px;
+  margin-top: 0;
+}
+
+.first-paragraph {
+  margin-bottom: 0;
+}
+
+/* Button styling */
+.START-BUTTON {
+  background-color: #FF6565;
+  color: #ffffff;
+  border-radius: 20px;
+  width: 162px;
+  height: 44px;
+  border: none;
+  margin-top: 27px;
+  transition: box-shadow 0.15s;
+  transition: background-color 0.15s ease;
+
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.button-text {
+  font-size: 14px;
+}
+
+div button:hover {
+  background-color: #a485d6;
+  box-shadow: 5px 5px 10px white;
+}
+
+.header-description {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 50px;
+  line-height: 40px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small screens (mobile phones) */
+@media (max-width: 768px) {
+  header {
+      height: auto; /* Allow header to adjust dynamically */
+      padding: 20px;
+  }
+
+  .header-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .logo-container img {
+      height: 40px; /* Reduce logo size */
+  }
+
+  .logo-container h1 {
+      font-size: 20px; /* Smaller text size */
+  }
+
+  nav ul {
+      flex-direction: column; /* Stack navigation links vertically */
+      gap: 10px;
+  }
+
+  nav ul li a {
+      font-size: 16px; /* Adjust font size */
+  }
+
+  .header-text {
+      margin-top: 20px;
+      font-size: 18px; /* Reduce text size for smaller screens */
+      padding: 0 10px; /* Add padding for better spacing */
+  }
+
+  .START-BUTTON {
+      width: 120px;
+      height: 40px;
+      font-size: 12px;
+  }
+
+  .header-description {
+      font-size: 12px; /* Adjust header description font size */
+      line-height: 30px;
+      margin-top: 20px;
+    
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .header-container {
+      flex-direction: column; /* Stack header elements for better alignment */
+      align-items: center;
+      text-align: center;
+  }
+
+  nav ul {
+      gap: 15px; /* Adjust gap between navigation links */
+  }
+
+  nav ul li a {
+      font-size: 17px; /* Slightly smaller font size */
+  }
+
+  .header-text {
+      margin-top: 50px;
+      font-size: 20px;
+  }
+
+  .START-BUTTON {
+      width: 140px;
+      height: 42px;
+      font-size: 14px;
+  }
+}
+
+
+
+.What{
+    color:#a485d6;
+    font-size: 32px;
+}
+.what-we-do-section{
+    text-align: center;
+    margin-top: 0px;
+    color: #071629;
+    max-width: 637px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    width: 1400px;
+    
+
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: darkcyan;
+    margin-top: 45px;
+    margin-bottom: auto;
+    font-size: 29;
+    display: inline-block;
+    font-weight: bolder;
+}
+.what-we-do-description{
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+/* Container styles */
+.font-properties {
+    max-width: 1002px; /* Maximum width of the container */
+    margin: 0 auto; /* Center align the container */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the items horizontally */
+    gap: 16px; /* Add space between blocks */
+    flex-wrap: nowrap; /* Allow items to wrap to the next row if needed */
+    margin-top: 45px;
+    margin-bottom: 90px;
+  }
+  
+  /* Individual block styles */
+  .font-properties > div {
+    max-width: 210px; /* Limit the width of each block */
+    display: flex; /* Use flexbox for vertical alignment of icon and text */
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center align horizontally within each block */
+    text-align: center; /* Center align text content */
+    gap: 8px; /* Add space between the icon and the text */
+  }
+  
+  /* Icon styling */
+  .font-properties span {
+    font-size: 100px; /* Icon size */
+    color: #FF6565; /* Icon color */
+  }
+  .font-properties span:hover {
+    animation: bounce 0.5s ease-in-out; /* Trigger the bounce effect */
+    color: #ff6347;
+  }
+  
+  /* Text styling */
+  .font-properties p {
+    font-size: 10px; /* Font size for the description */
+    color: #555; /* Text color */
+    margin: 0; /* Remove default margin */
+    line-height: 25px;
+    margin-top: 25px;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-with-background {
+    background: url('./images/headphones_hero_2.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 50px; /* Adjust padding for spacing inside the section */
+    position: relative; /* Ensures child elements are positioned relative to this container */
+    margin: 0 auto; /* Center the section horizontally */
+    width: 1440px;
+    height: 650px;
+  }
+  .section-with-background .content {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .section-with-background .content h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: darkcyan;
+  }
+  
+  .section-with-background .content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .pentagon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Responsive layout */
+  }
+  
+  .pentagon {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    background: #FF6565;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .pentagon-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+  .text-2{
+    font-size: 50px;
+  }
+  
+  /* Hover Effect */
+  .pentagon:hover {
+    transform: scale(1.1);
+    background: #ff6347;
+  }
+  
+
+
+
 /* Contact us section styling */
 .contact-us {
     width: 100%;
